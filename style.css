@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+body {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gochi Hand', cursive;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.heading__title {
+    font-size: 2rem;
+    margin: 0;
+    background-color: #ffeb3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transform: rotate(-3deg);
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 500px) {
+    .form__input {
+        width: calc(100% - 80px);
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.button span {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.button:active, .button:focus {
+    outline: none;
+}
+
+.toDoList {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.toDoList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.toDoList li:hover {
+    text-decoration: line-through wavy red;
+    color: red;
+}
